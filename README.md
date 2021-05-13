@@ -4,17 +4,17 @@ V3 is final versions of code turned in for project
 CODE USE
 solverinputs
   Prompts user for all the required inputs
-    1.X: Single side dimension of the total matrix of material
-      Requires square dimensions
-    2. Number of different materials
-    3. Upper left and lower right corners for each material
-      a. This is required so I can build the materials. It limits users to only rectangular sections material
-         as long the total dimensions of materials in the x and y directions fit into X
-      b. It is important to note that these dimensions are input as matrix indices. e.g. the upper right corner always
-      has x value of 1 and y value of 1
-    4. Absorption for that material (must be positive)
-    5. Diffusion for that material (must be positive)
-    6. Source inputs with same requirements as in steps 2 and 3
+  1.X: Single side dimension of the total matrix of material
+    Requires square dimensions
+  2. Number of different materials
+  3. Upper left and lower right corners for each material
+     a. This is required so I can build the materials. It limits users to only rectangular sections material
+        as long the total dimensions of materials in the x and y directions fit into X
+        b. It is important to note that these dimensions are input as matrix indices. e.g. the upper right corner always
+        has x value of 1 and y value of 1
+  4. Absorption for that material (must be positive)
+  5. Diffusion for that material (must be positive)
+  6. Source inputs with same requirements as in steps 2 and 3
     
 dif_solver
   1. Takes in values from solverinputs and calls on array_builder and gs_solver.
